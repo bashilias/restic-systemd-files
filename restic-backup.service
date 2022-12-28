@@ -1,0 +1,9 @@
+[Unit]
+Description=Restic Backup Service
+
+[Service]
+Type=oneshot
+Restart=on-failure
+RestartSec=30
+ExecStart=restic --repo $REPO backup --verbose $BAKPATH $EXCLUDE --password-file $PASSWORDFILE && sleep 10
+EnvironmentFile=%h/.config/restic-backup.conf

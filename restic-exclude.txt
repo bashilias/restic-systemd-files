@@ -1,0 +1,16 @@
+# exclude the following directories from backups
+$HOME/.cache
+$HOME/.azure
+$HOME/.docker
+$HOME/.gnome
+$HOME/.kube
+$HOME/.mozilla
+$HOME/.pki
+$HOME/snap
+$HOME/.thunderbird
+$HOME/'VirtualBox VMs'
+$HOME/.android
+$HOME/.local
+$HOME/.var/app/**/cache
+$HOME/.var/app/com.usebottles.bottles
+$HOME/Videos
